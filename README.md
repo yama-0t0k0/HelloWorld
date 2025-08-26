@@ -47,12 +47,20 @@ flutter build web
 3. 「New site from Git」をクリック
 4. GitHubリポジトリを選択
 5. 以下の設定でデプロイ：
-   - Build command: `flutter build web --release`
+   - Build command: `./build.sh`
    - Publish directory: `build/web`
 
 ### 自動デプロイ
 
-`netlify.toml`ファイルが設定されているため、GitHubにプッシュすると自動的にデプロイされます。
+`netlify.toml`ファイルと`build.sh`スクリプトが設定されているため、GitHubにプッシュすると自動的にデプロイされます。
+
+### ビルドプロセス
+
+Netlifyでのビルドプロセス：
+1. Flutter SDKの自動インストール
+2. 依存関係の取得
+3. Web用のリリースビルド
+4. 静的ファイルの生成
 
 ## 技術スタック
 
@@ -60,6 +68,14 @@ flutter build web
 - Dart
 - Material Design 3
 - Web Platform
+
+## トラブルシューティング
+
+### ビルドエラーが発生した場合
+
+1. `build.sh`スクリプトが実行可能であることを確認
+2. Flutter SDKのバージョンが正しいことを確認
+3. 依存関係が正しくインストールされていることを確認
 
 ## ライセンス
 
