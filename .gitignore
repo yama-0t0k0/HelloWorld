@@ -43,3 +43,73 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Android specific
+gradle-wrapper.jar
+android/.gradle
+android/captures/
+android/gradlew
+android/gradlew.bat
+android/local.properties
+android/GeneratedPluginRegistrant.java
+android/.cxx/
+android/**/*.keystore
+android/**/*.jks
+android/key.properties
+
+# iOS specific
+ios/**/dgph
+ios/*.mode1v3
+ios/*.mode2v3
+ios/*.moved-aside
+ios/*.pbxuser
+ios/*.perspectivev3
+ios/**/*sync/
+ios/.sconsign.dblite
+ios/.tags*
+ios/**/.vagrant/
+ios/**/DerivedData/
+ios/Icon?
+ios/**/Pods/
+ios/**/.symlinks/
+ios/profile
+ios/xcuserdata
+ios/**/.generated/
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/ephemeral/
+ios/Flutter/app.flx
+ios/Flutter/app.zip
+ios/Flutter/flutter_assets/
+ios/Flutter/flutter_export_environment.sh
+ios/ServiceDefinitions.json
+ios/Runner/GeneratedPluginRegistrant.*
+!ios/default.mode1v3
+!ios/default.mode2v3
+!ios/default.pbxuser
+!ios/default.perspectivev3
+
+# macOS specific
+macos/**/Flutter/ephemeral/
+macos/**/Pods/
+macos/**/dgph
+macos/**/xcuserdata/
+
+# Linux specific
+linux/flutter/ephemeral
+
+# Windows specific  
+windows/flutter/ephemeral/
+windows/*.suo
+windows/*.user
+windows/*.userosscache
+windows/*.sln.docstates
+windows/x64/
+windows/x86/
+windows/*.[Cc]ache
+!windows/*.[Cc]ache/
+
+# Local Netlify folder
+.netlify
